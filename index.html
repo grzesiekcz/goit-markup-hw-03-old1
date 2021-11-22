@@ -38,42 +38,53 @@
         
         <ul>
           <li>
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
+            <a class="link" href="mailto:info@example.com">
+              <svg width="16" height="12">
+              <use href="images/icons.svg#icon-envelope"></use>
+            </svg>
+              info@example.com</a>
           </li>
-          <li><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
+          <li><a class="link" href="tel:+48111111111">
+            <svg width="16" height="12">
+              <use href="images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111</a></li>
         </ul>
       </div>
       </nav>
     </header>
     <main>
-      <section class="bbackground">
+      <article class="hero">
+      <div class="background">
         <h1 class="bigtitle">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="mainbutton">Zamów usługę</button>
-      </section>
+        <button type="button" class="mainbutton"><p class="button-text">Zamów usługę</p></button>
+      </div>
+      </article>
       <section class="section">
-        <ul>
-          <li>
+        <div class="container">
+        <ul class="about-us-list-nodecor">
+          <li class="about-us-item">
             <h4 class="ptitle">Lorem Ipsum</h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="about-us-item">
             <h4 class="ptitle">Lorem Ipsum</h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="about-us-item">
             <h4 class="ptitle">Lorem Ipsum</h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="about-us-item">
             <h4 class="ptitle">Lorem Ipsum</h4>
             <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -81,11 +92,10 @@
             </p>
           </li>
         </ul>
-      </section>
-      <section class="section">
+      
         <h2 class="btitle">Czym się zajmujemy</h2>
-        <ul>
-          <li>
+        <ul class="about-us-gallery-nodecor">
+          <li class="about-us-gallery-item">
             <img
               src="images/image1.jpg"
               alt="Osoba pracująca przy biurku na tablecie i komputerze osobistym"
@@ -93,7 +103,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="about-us-gallery-item">
             <img
               src="images/image2.jpg"
               alt="Osoba tworząca aplikację na telefon przy użyciu laptopa i telefonu"
@@ -101,7 +111,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="about-us-gallery-item">
             <img
               src="images/image3.jpg"
               alt="Osoba ogląda paletę kolorów na tablecie"
@@ -110,12 +120,14 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <section class="lowersection">
+        <div class="container">
         <h2 class="btitle">Nasz zespół</h2>
-        <ul>
-          <li>
-            <figure>
+        <ul class="team-gallery-no-decor">       
+          <li class="team-gallery-item">
+            <figure class="team-gallery-item-item">
               <img
                 src="images/photo1.jpg"
                 alt="Mężczyzna w okularach w bordowej koszuli"
@@ -123,13 +135,13 @@
                 height="260"
               />
               <figcaption class="figcaption">
-                <h4 class="ftitle">John Doe</h4>
-                Product Designer
+                <h3 class="ftitle">John Doe</h4>
+                <h4 class="team-description-job">Product Designer</h4>
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="team-gallery-item">
+            <figure class="team-gallery-item-item">
               <img
                 src="images/photo2.jpg"
                 alt="Kobieta w okularach i ciemnej marynarce"
@@ -137,13 +149,12 @@
                 height="260"
               />
               <figcaption class="figcaption">
-                <h4 class="ftitle">John Doe</h4>
-                Frontend Developer
-              </figcaption>
+                <h3 class="ftitle">John Doe</h4>
+<h4 class="team-description-job">Frontend Developer</h4>              </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="team-gallery-item">
+            <figure class="team-gallery-item-item">
               <img
                 src="images/photo3.jpg"
                 alt="Mężczyzna w jasnej koszuli"
@@ -151,13 +162,13 @@
                 height="260"
               />
               <figcaption class="figcaption">
-                <h4 class="ftitle">John Doe</h4>
-                Marketing
+                <h3 class="ftitle">John Doe</h4>
+                <h4 class="team-description-job">Marketing</h4>
               </figcaption>
             </figure>
           </li>
-          <li>
-            <figure>
+          <li class="team-gallery-item">
+            <figure class="team-gallery-item-item">
               <img
                 src="images/photo4.jpg"
                 alt="Mężczyzna w okularach i ciemnym t-shircie"
@@ -165,25 +176,30 @@
                 height="260"
               />
               <figcaption class="figcaption">
-                <h4 class="ftitle">John Doe</h4>
-                Marketing
+                <h3 class="ftitle">John Doe</h4>
+                <h4 class="team-description-job">UI Designer</h4>
               </figcaption>
             </figure>
           </li>
         </ul>
+        </div>
+      </section>
+       <section class="clients section">
+        <div class="container">
+          <h2 class="clients-banner">Nasi klienci</h2>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <h3 class="logo"><a href="index.html">WebStudio</a></h3>
-      <address>
-        <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li>
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
-        </ul>
+      <div class="container">
+        <address class="contact">
+      <a href="index.html" class="logo_white"><span class="logo_firstpart"></span>Web</a>span>Studio</a>
+      
+        <p class="contact-place">m. Warszawa, aleje Jerozolimskie 21</p>
+          <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
+          <a href="tel:+48111111111" class="contact-link"> +48 111 111 111 </a>
       </address>
+      </div>
     </footer>
   </body>
 </html>
