@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,49 +15,61 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <h3 class="logo">
-          <a href="/index.html">WebStudio</a>
-        </h3>
-        <nav>
-          <ul>
-            <li>Agencja</li>
-            <li>
-              <a class="link" href="portfolio.html" alt="Portfolio"
-                >Portfolio
-              </a>
+    <header class="header">
+      <nav class="navigation">
+      <div class="container">
+        
+          <a href="index.html" class="logo_white"><span class="logo_firstpart"></span>Web</a>span>Studio</a>
+        
+        
+          <ul class="navigation-list-no-decoration">
+            <li class="navigation-list-item">Agencja</li>
+            <li class="navigation-list-item">
+              <a
+                class="link"
+                href="portfolio/portfolio.html"
+                alt="Portfolio"
+                Portfolio
+                >Portfolio</a
+              >
             </li>
-            <li>Kontakt</li>
+            <li class="navigation-list-item">Kontakt</li>
           </ul>
-        </nav>
-      </div>
-      <div>
+        
         <ul>
           <li>
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
+            <a class="link" href="mailto:info@example.com">
+              <svg width="16" height="12">
+              <use href="images/icons.svg#icon-envelope"></use>
+            </svg>
+              info@example.com</a>
           </li>
-          <li>
-            <a class="link" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
+          <li><a class="link" href="tel:+48111111111">
+            <svg width="16" height="12">
+              <use href="images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111</a></li>
         </ul>
       </div>
+      </nav>
     </header>
-    <section class="section">
+    
       <main>
-        <ul>
+        <div class="container">
+        <ul class="services-list-no-decor">
           <li><button type="button" class="button">Wszystkie</button></li>
           <li><button type="button" class="button">Strony</button></li>
           <li><button type="button" class="button">Aplikacje</button></li>
           <li><button type="button" class="button">Dizajn</button></li>
           <li><button type="button" class="button">Marketing</button></li>
         </ul>
+        </div>
       </main>
-    </section>
+    
     <section class="section">
       <div>
-        <ul>
-          <li>
+        <ul class="services-gallery">
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio1.jpg"
               alt="laptop z otwartą stroną www"
@@ -64,11 +77,11 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Technocrack</h4>
-              Strona internetowa
+              <h3 class="ititle">Technocrack</h4>
+              <h4 class="services-gallery-description-type">Strona internetowa</h4>
             </figcaption>
           </li>
-          <li>
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio2.jpg"
               alt="grafika koszykarze"
@@ -76,11 +89,11 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Grafika New Orlean vs Golden Star</h4>
-              Dizajn
+              <h3 class="ititle">Grafika New Orlean vs Golden Star</h4>
+              <h4 class="services-gallery-description-type">Dizajn</h4>
             </figcaption>
           </li>
-          <li>
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio3.jpg"
               alt="logo restauracja seafood"
@@ -88,11 +101,11 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Restauracja Seafood</h4>
-              Aplikacja
+              <h3 class="ititle">Restauracja Seafood</h4>
+              <h4 class="services-gallery-description-type">Aplikacja</h4>
             </figcaption>
           </li>
-          <li>
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio4.jpg"
               alt="słuchawki"
@@ -100,11 +113,11 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Projekt Prime</h4>
-              Marketing
+              <h3 class="ititle">Projekt Prime</h4>
+              <h4 class="services-gallery-description-type">Marketing</h4>
             </figcaption>
           </li>
-          <li>
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio5.jpg"
               alt="pudełka"
@@ -112,11 +125,11 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Projekt Boxes</h4>
-              Aplikacja
+              <h3 class="ititle">Projekt Boxes</h4>
+              <h4 class="services-gallery-description-type">Aplikacja</h4>
             </figcaption>
           </li>
-          <li>
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio6.jpg"
               alt="imac z otwartą stroną www"
@@ -124,11 +137,11 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Inspiration Has No Borders</h4>
-              Strona internetowa
+              <h3 class="ititle">Inspiration Has No Borders</h4>
+              <h4 class="services-gallery-description-type">Strona internetowa</h4>
             </figcaption>
           </li>
-          <li>
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio7.jpg"
               alt="otwarte czasopismo limited edition"
@@ -136,11 +149,11 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Magazyn Limited Edition</h4>
-              Strona internetowa
+              <h3 class="ititle">Magazyn Limited Edition</h4>
+              <h4 class="services-gallery-description-type">Strona internetowa</h4>
             </figcaption>
           </li>
-          <li>
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio8.jpg"
               alt="logo LAB"
@@ -148,11 +161,11 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Projekt LAB</h4>
-              Marketing
+              <h3 class="ititle">Projekt LAB</h4>
+               <h4 class="services-gallery-description-type">Marketing</h4>
             </figcaption>
           </li>
-          <li>
+          <li class="services-gallery-item">
             <img
               src="../images/portfolio9.jpg"
               alt="osoba pracująca przy laptopie"
@@ -160,26 +173,23 @@
               height="294"
             />
             <figcaption class="figcaption">
-              <h4 class="ititle">Growing Business</h4>
-              Aplikacja
+              <h3 class="ititle">Growing Business</h4>
+              <h4 class="services-gallery-description-type">Aplikacja</h4>
             </figcaption>
           </li>
         </ul>
       </div>
     </section>
     <footer class="footer">
-      <h3 class="logo"><a href="/index.html">WebStudio</a></h3>
-      <address>
-        <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li>
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li>
-            <a class="link" href="tel:+48111111111">+48 111 111 111</a>
-          </li>
-        </ul>
+      <div class="container">
+        <address class="contact">
+      <a href="index.html" class="logo_white"><span class="logo_firstpart"></span>Web</a>span>Studio</a>
+      
+        <p class="contact-place">m. Warszawa, aleje Jerozolimskie 21</p>
+          <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
+          <a href="tel:+48111111111" class="contact-link"> +48 111 111 111 </a>
       </address>
+      </div>
     </footer>
   </body>
 </html>
