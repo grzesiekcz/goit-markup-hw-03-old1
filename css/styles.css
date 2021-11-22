@@ -1,14 +1,57 @@
 :root {
-  --color: #2196f3;
-  --main-color: #757575;
-  --background-color: #2f303a;
+   --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --main-color: #2196f3;
 }
 body {
-  background: #ffffff;
-  color: var(--main-color);
-  font-family: "Roboto", "Raleway", sans-serif;
+  
+  font-family: var(--main-font);
+}
+h1, h2, h3, h4, h5, h6, ul, p {
+  margin: 0;
+}
+p, ul {
+  padding: 0;
+}
+img {
+  display: block;
 }
 
+.no-decor {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header, .container, .navigation, .navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.header, .navigation {
+  border-bottom: 1px solid #ececec;
+}
+
+.header .logo_white {
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
+  margin-left: 0;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 46px;
+}  
 .button {
   cursor: pointer;
   font-style: normal;
